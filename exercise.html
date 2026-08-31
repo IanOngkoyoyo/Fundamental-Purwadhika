@@ -1,0 +1,26 @@
+<script>
+    const number1 = Number(prompt('Input your first number'))
+    const number2 = Number(prompt('Input your second number'))
+    const operator = prompt('Input Operator (+, -, *, /)')
+
+    let result
+
+    switch (operator) {
+        case '+':
+            result = number1 + number2
+            break
+        case '-':
+            result = number1 - number2
+            break
+        case '*':
+            result = number1 * number2
+            break
+        case '/':
+            result = number1 / number2
+            break
+        default:
+            alert('Invalid operator')
+    }
+
+    alert(result)
+</script>
