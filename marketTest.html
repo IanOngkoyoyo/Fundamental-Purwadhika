@@ -1,0 +1,27 @@
+<script>
+    const productName = ['Indomie Goreng', 'Pepsodent', 'Cheetos'];
+    const productPrice = [3100, 1900, 11000];
+    const productStock = [200, 130, 300];
+
+    const productList =prompt('Product list:\n1. Indomie Goreng\n2. Pepsodent\n3. Cheetos');
+
+    while(productList !== '1' && productList !== '2' && productList !== '3'){
+        alert('Produk tidak tersedia, silahkan masukkan angka 1, 2, atau 3');
+        productList = prompt('Product list:\n1. Indomie Goreng\n2. Pepsodent\n3. Cheetos');
+    }
+
+    let result;
+    switch(productList){
+        case '1':
+            result = `Product: ${productName[0]}\nPrice: ${productPrice[0]}\nStock: ${productStock[0]}`;
+            break;
+        case '2':
+            result = `Product: ${productName[1]}\nPrice: ${productPrice[1]}\nStock: ${productStock[1]}`;
+            break;
+        case '3':
+            result = `Product: ${productName[2]}\nPrice: ${productPrice[2]}\nStock: ${productStock[2]}`;
+            break;
+    }
+    alert(result);
+
+</script>
