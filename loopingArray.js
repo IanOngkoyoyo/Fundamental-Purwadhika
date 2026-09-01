@@ -11,7 +11,7 @@ for (let bebas of brands){
 
 //continue dan break
 for (let i = 0; i < 5; i++){
-    if(i===3) continue // angka 3 akan terskip
+    if(i === 3) continue // angka 3 akan terskip
 }
 
 for (let i = 0; i <5; i++){
