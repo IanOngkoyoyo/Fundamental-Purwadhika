@@ -1,38 +1,3 @@
 <script>
-  let number1 = Number(prompt('Input your first number'));
-  while (isNaN(number1)) {
-    alert('Please try again, Input number only');
-    number1 = Number(prompt('Input your first number'));
-  }
-
-  let number2 = Number(prompt('Input your second number'));
-  while (isNaN(number2)) {
-    alert('Please try again, Input number only');
-    number2 = Number(prompt('Input your second number'));
-  }
-
-  let operator = prompt('Input Operator (+, -, *, /)');
-
-  while (operator !== '+' && operator !== '-' && operator !== '*' && operator !== '/') {
-    alert('Invalid operator, Try Again');
-    operator = prompt('Input Operator (+, -, *, /)');
-  }
-
-  let result;
-  switch (operator) {
-    case '+':
-      result = number1 + number2;
-      break;
-    case '-':
-      result = number1 - number2;
-      break;
-    case '*':
-      result = number1 * number2;
-      break;
-    case '/':
-      result = number1 / number2;
-      break;
-  }
-
-  alert(result);
+    
 </script>
