@@ -1,0 +1,25 @@
+<script>
+    const products = [
+        {
+            name: 'Indomie',
+            price: 3000,
+            stocks: 2000
+        },
+        {
+            name: 'pepsodent',
+            price: 18000,
+            stocks: 100
+        },
+        {
+            name: 'Ultra Milk',
+            price: 20000,
+            stocks: 200
+        },
+    ]
+    let productList = ''
+    for(let i = 0; i < products.length; i++) {
+        productList += (i+1) + '. ' + products[i].name + ' - Rp' + products[i].price.toLocaleString('id-ID') + ' (Stock: ' + products[i].stocks + ')\n'
+    }
+    
+    const display = prompt(productList)
+</script>
